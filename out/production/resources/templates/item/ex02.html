@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Ex02</title>
+</head>
+<body>
+<h1>Ex02</h1>
+<div>
+    상품명: <span th:text="${itemDto.getItemNm()}">상품</span>
+</div>
+<div>
+    상품 설명: <span th:text="${itemDto.getItemDetail()}">상품</span>
+</div>
+<div>
+    상품 가격: <span th:text="${itemDto.getPrice()}">상품</span>
+</div>
+<div>
+    상품 수량: <span th:text="${itemDto.getStockNumber()}">상품</span>
+</div>
+</body>
+</html>
