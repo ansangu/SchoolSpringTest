@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>타임리프 연습1</title>
+</head>
+<body>
+    <h1>Thymeleaf 연습 1</h1>
+    <div>
+        상품명: <span th:text="${item.getItemNm()}">상품</span>
+    </div>
+    <div>
+        상품 설명: <span th:text="${item.getItemDetail()}">상품</span>
+    </div>
+    <div>
+        상품 가격: <span th:text="${item.getPrice()}">상품</span>
+    </div>
+    <div>
+        상품 수량: <span th:text="${item.getStockNumber()}">상품</span>
+    </div>
+    <div>
+        <a th:href="@{/item/thymeleaf2(name='홍길동',age=15)}">thymeleaf2 이동</a>
+    </div>
+</body>
+</html>
